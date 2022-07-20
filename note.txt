@@ -1,0 +1,5 @@
+Note:
+    1. Tampilan index, gambar slide
+    2. Login admin
+    3. tq.html
+    4. checkbox on data

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>BOOKING</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style>
+		body {
+			background-color: black;
+		}
+		.selector-for-some-widget {
+			box-sizing: content-box;
+		}
+        @font-face {
+			font-family: Slaytanic;
+			src: url("font/Slaytanic.ttf");
+		}
+	</style>
+</head>
+<body>
+    <div>
+        <div>
+            <div style="margin-top: 100px;">
+                <p class="text-center fs-1 fw-bold lh-1" style="color: aliceblue;  font-family: Slaytanic;">BOOKING FORM</p>
+            </div>
+        </div>
+        <div name="formorder" style="margin-top: 60px; margin-right: 40%; margin-left: 40%;" class="text-center mt-3" method="post" action="order.php">
+            <form method="post" action="order.php">
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label float-start mt-3" style="color: aliceblue;">Name</label>
+                    <input type="text" name="nama" class="form-control bg-dark" id="nama exampleFormControlInput1" style="color: aliceblue;">
+                </div>
+                <div class="mt-2">
+                    <label for="exampleFormControlInput1" class="form-label float-start" style="color: aliceblue;">Whatsapp Number</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-dark" style="color: aliceblue;" id="basic-addon1">+62</span>
+                        <input type="number" name="nowa" id="nowa" class="form-control bg-dark" style="color: aliceblue;" aria-label="Nomor Whatsapp" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <label for="exampleFormControlInput1" class="form-label float-start" style="color: aliceblue;">Choose Package</label>
+                    <select class="form-select bg-dark" name="rs" id="rs" aria-label="Default select example" style="color: aliceblue;">
+                        <option selected>Pilih Paket</option>
+                        <option value="Package X" style="color: aliceblue;">Package X</option>
+                        <option value="Package Y" style="color: aliceblue;">Package Y</option>
+                        <option value="Package Z" style="color: aliceblue;">Package Z</option>
+                    </select>
+                </div>
+                <div class="mt-2">
+                    <div class="float-left">
+                        <label for="exampleFormControlInput1" class="form-label float-start" style="color: aliceblue;">Booking Date & Time</label>
+                    </div>
+                    <input type="date" name="tgl" id="tgl" class="w-100 bg-dark form-select" style="color: aliceblue;">
+                    <input type="time" name="time" id="time" class="w-100 bg-dark form-select mt-2" style="color: aliceblue;">
+                </div>
+                <div class="text-center mt-4">
+                    <input type="submit" class="btn btn-outline-light" name="Submit" value="Order">
+                </div>
+            </form>
+            <div>
+                <a href="tq.html"></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
